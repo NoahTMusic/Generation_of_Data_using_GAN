@@ -17,9 +17,6 @@ import os
 import time
 import matplotlib.pyplot as plt
 
-from google.colab import drive
-drive.mount('/content/drive')
-
 GENERATE_RES = 3 # Generation resolution factor 
 # (1=32, 2=64, 3=96, 4=128, etc.)
 GENERATE_SQUARE = 32 * GENERATE_RES # rows/cols (should be square)
@@ -34,7 +31,7 @@ PREVIEW_MARGIN = 16
 SEED_SIZE = 100
 
 # Configuration
-DATA_PATH = '/content/drive/MyDrive/cars/images'
+DATA_PATH = 'D:/Python/Dataset/NN/IMAGES'
 EPOCHS = 50
 BATCH_SIZE = 32
 BUFFER_SIZE = 60000
